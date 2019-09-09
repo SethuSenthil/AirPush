@@ -10,7 +10,7 @@
 osascript -e "tell application \"AirMessage\" to activate"
 osascript -e "tell application \"messages\" to activate"
 
-echo "    _      _____           _
+echo "     _      _____           _
      /\   (_)    |  __ \         | |
     /  \   _ _ __| |__) |   _ ___| |__
    / /\ \ | | '__|  ___/ | | / __| '_
@@ -18,13 +18,14 @@ echo "    _      _____           _
  /_/    \_\_|_|  |_|    \__,_|___/_| |_|
  All in one AitMessage script you can forget about!
 
- v0.1 beta  --Checl for updates at: https://github.com/sethusenthil/AirPush
+ v0.2 beta  --Check for updates at: https://github.com/sethusenthil/AirPush
 
- By Sethu Senthil on 6/9/2019
+ By Sethu Senthil on 8/9/2019
    https://sethusenthil.com
  "
 
 while :
     do
-         ssh -R $SERVEO_PORT:localhost:$AIRMESSAGE_PORT serveo.net -o ServerAliveInterval=$SERVER_ALIVE_INTERVAL
+      ssh -R $SERVEO_PORT:localhost:$AIRMESSAGE_PORT serveo.net -o ServerAliveInterval=$SERVER_ALIVE_INTERVAL
+      echo "AirPush: Reverse Proxy Disconnected...Reconnecting"
 done
