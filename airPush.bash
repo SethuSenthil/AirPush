@@ -9,6 +9,8 @@
 
 osascript -e "tell application \"AirMessage\" to activate"
 osascript -e "tell application \"messages\" to activate"
+osascript -e "tell application \"System Events\" to set visible of application process \"Messages\" to false"
+
 
 echo "     _      _____           _
      /\   (_)    |  __ \         | |
@@ -18,7 +20,7 @@ echo "     _      _____           _
  /_/    \_\_|_|  |_|    \__,_|___/_| |_|
  All in one AitMessage script you can forget about!
 
- v0.2 beta  --Check for updates at: https://github.com/sethusenthil/AirPush
+ v1.0 stable  --Check for updates at: https://github.com/sethusenthil/AirPush
 
  By Sethu Senthil on 8/9/2019
    https://sethusenthil.com
